@@ -73,10 +73,15 @@ while continua == 's':
             print("Il banco ha vinto!")
             print(f"Punteggio del banco: {punteggio_banco}")
             print(f"Punteggio del giocatore: {punteggio_giocatore}")
+            vittorie_banco = vittorie_banco +1
         else:
             print("Hai vinto!")
             print(f"Punteggio del banco: {punteggio_banco}")
             print(f"Punteggio del giocatore: {punteggio_giocatore}")
+            vittorie_giocatore = vittorie_giocatore + 1
 
     continua = input("vuoi continuare? (S/N)")
     continua = continua.lower()
+
+print(f"Vittorie del banco: {vittorie_giocatore}")
+print(f"vittorie del giocatore: {vittorie_giocatore}")
